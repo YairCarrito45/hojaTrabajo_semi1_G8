@@ -11,6 +11,6 @@ app.use(express.json());
 // Monta las rutas de la API en la raiz.
 app.use('/', apiRoutes);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`API JS corriendo en puerto ${PORT}`);
 });
